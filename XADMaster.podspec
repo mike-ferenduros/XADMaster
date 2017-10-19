@@ -8,8 +8,8 @@ Pod::Spec.new do |spec|
   spec.summary      = 'XADMaster for iOS'
   spec.source       = { :git => 'https://github.com/mike-ferenduros/XADMaster.git' }
   spec.source_files = 'XADMaster/**/*.{h,c,cpp,m,tab}'
-  spec.public_header_files = 'XADMaster/*.h'
-  spec.private_header_files = 'XADMaster/**/*.h'
+  spec.public_header_files = 'XADMaster/*.h', 'XADMaster/Utilities/*.h', 'XADMaster/Categories/*.h', 'XADMaster/CSHandle/*.h', 'XADMaster/**/*.tab'
+  spec.private_header_files = 'XADMaster/**/*.tab', 'XADMaster/CSHandle/CSBzip2Handle.h', 'XADMaster/Categories/Progress.h', 'XADMaster/Utilities/XADCRCHandle.h'
   spec.libraries    = 'z', 'bz2'
   spec.compiler_flags = '-fno-objc-arc'
 end
