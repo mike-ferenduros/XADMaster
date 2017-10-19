@@ -9,6 +9,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/mike-ferenduros/XADMaster.git' }
   spec.source_files = 'XADMaster/**/*.{h,c,cpp,m,tab}'
   spec.public_header_files = 'XADMaster/*.h'
+  spec.private_header_files = 'XADMaster/**/*.h'
   spec.libraries    = 'z', 'bz2'
   spec.compiler_flags = '-fno-objc-arc'
 end
